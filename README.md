@@ -13,6 +13,6 @@ Log
  - Pre-processing: shuffling, grayscale conversion, normalization
 
 ###2017/2/24:
- - Validation Accuracy: **93.0%**
- - Model: LeNet-5, Epochs = 100, Batch size = 128, learn rate = 0.0006, mu = 0, sigma = 0.1 
+ - Validation Accuracy: **94.7%**
+ - Model: LeNet-5, Epochs = 100, Batch size = 128, learn rate = 0.0007, mu = 0, sigma = 0.1 
  - Pre-processing: shuffling, grayscale conversion, normalization
