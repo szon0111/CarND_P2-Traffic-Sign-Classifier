@@ -11,3 +11,8 @@ Log
  - Validation Accuracy: **93.0%**
  - Model: LeNet-5, Epochs = 100, Batch size = 128, learn rate = 0.001, mu = 0, sigma = 0.1 
  - Pre-processing: shuffling
+
+###2017/2/23:
+ - Validation Accuracy: **94.7%**
+ - Model: LeNet-5, Epochs = 100, Batch size = 128, learn rate = 0.001, mu = 0, sigma = 0.1 
+ - Pre-processing: shuffling, grayscale conversion
