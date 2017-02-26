@@ -18,7 +18,12 @@ Log
  - Pre-processing: shuffling, grayscale conversion, normalization
 
 ###2017/2/26:
+ - Validation Accuracy: **93.8%**
+ - Model: LeNet-5, Epochs = 100, Batch size = 128, learn rate = 0.0001, mu = 0, sigma = 0.1, dropout = 0.5
+ - Pre-processing: shuffling, grayscale conversion, normalization
+ 
+###2017/2/26:
  - Validation Accuracy: **94.5%**
  - Model: LeNet-5, Epochs = 100, Batch size = 128, learn rate = 0.0001, mu = 0, sigma = 0.1, dropout = 0.5
  - Pre-processing: shuffling, grayscale conversion, normalization, 
- - Data-augmentation: 10381 new images with random rotations (-20, 20) 
+ - Data-augmentation: 10381 new images with random rotations (-20, 20) for classes less than 750 images
