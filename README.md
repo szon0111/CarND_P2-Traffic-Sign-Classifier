@@ -37,3 +37,11 @@ Log
 - Model: LeNet-5 + 1 Convolutional layer + 1 Fully Connected layer
 - Parameters: Epochs = 80, Batch size = 256, learn rate = 0.0005, mu = 0, sigma = 0.1, dropout = 0.5
 - Pre-processing: shuffling, grayscale conversion, normalization
+- Data-augmentation: NONE
+
+###2017/2/27:
+- **Test Accuracy: 96.2%**
+- Model: LeNet-5 + 1 Convolutional layer + 1 Fully Connected layer
+- Parameters: Epochs = 80, Batch size = 256, learn rate = 0.0005, mu = 0, sigma = 0.1, dropout = 0.5
+- Pre-processing: shuffling, grayscale conversion, normalization
+- Data-augmentation: NONE
