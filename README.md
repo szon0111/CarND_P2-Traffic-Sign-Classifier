@@ -33,15 +33,15 @@ Log
  - Data-augmentation: 4440 new images with random rotations (-20, 20) for classes less than 500 images
 
 ###2017/2/27:
-- Validation Accuracy: **98.2%**
-- Model: LeNet-5 + 1 Convolutional layer + 1 Fully Connected layer
+- Validation Accuracy: **97.5%**
+- Model: Modified LeNet-5 with 3 Convolution layers(3x3) + 3 Fully connected layers
 - Parameters: Epochs = 80, Batch size = 256, learn rate = 0.0005, mu = 0, sigma = 0.1, dropout = 0.5
 - Pre-processing: shuffling, grayscale conversion, normalization
 - Data-augmentation: NONE
 
 ###2017/2/27:
-- **Test Accuracy: 96.2%**
-- Model: LeNet-5 + 1 Convolutional layer + 1 Fully Connected layer
+- **Test Accuracy: 95.4%**
+- Model: Modified LeNet-5 with 3 Convolution layers(3x3) + 3 Fully connected layers
 - Parameters: Epochs = 80, Batch size = 256, learn rate = 0.0005, mu = 0, sigma = 0.1, dropout = 0.5
 - Pre-processing: shuffling, grayscale conversion, normalization
 - Data-augmentation: NONE
