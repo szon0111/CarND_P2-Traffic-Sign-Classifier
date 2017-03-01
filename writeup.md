@@ -1,8 +1,5 @@
-#**Traffic Sign Recognition** 
+#**Traffic Sign Classifier - Report** 
 
-##Report
-
----
 
 **Build a Traffic Sign Recognition Project**
 
@@ -44,11 +41,8 @@ The goals / steps of this project are the following:
 [wild]: https://cloud.githubusercontent.com/assets/10526591/23448814/8b391ed6-fe96-11e6-976b-331fe1e0b368.png
 
 
-## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
-
 ---
-[project code](https://github.com/szon0111/CarND_P2-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
+*Here is my [project code](https://github.com/szon0111/CarND_P2-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb) in jupyter notebook*
 
 ###Data Set Summary & Exploration
 
