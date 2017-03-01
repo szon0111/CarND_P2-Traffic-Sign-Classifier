@@ -5,3 +5,4 @@ models
 *.swp
 *.p
 floyd_requirements.txt
+augmented-data
