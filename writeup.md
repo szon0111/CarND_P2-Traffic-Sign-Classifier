@@ -35,12 +35,12 @@ The goals / steps of this project are the following:
 [4]: https://cloud.githubusercontent.com/assets/10526591/23463157/ec8c9068-fed3-11e6-8f0f-213271c90b90.png
 [5]: https://cloud.githubusercontent.com/assets/10526591/23447851/12217eee-fe91-11e6-918d-e2bfb293b455.png
 [6]: https://cloud.githubusercontent.com/assets/10526591/23447852/124efdc4-fe91-11e6-8482-7fd9d0f5d248.PNG
-[softmax_13]: https://cloud.githubusercontent.com/assets/10526591/23463177/ffc36f8a-fed3-11e6-9fcb-801fce115f24.png
-[softmax_25]: https://cloud.githubusercontent.com/assets/10526591/23463179/ffd5aed4-fed3-11e6-94a0-876ec031bd5d.png
-[softmax_36]: https://cloud.githubusercontent.com/assets/10526591/23463181/00ab7406-fed4-11e6-959c-7973e9288013.png
-[softmax_1]: https://cloud.githubusercontent.com/assets/10526591/23463175/ff8c9f00-fed3-11e6-8cb0-90fbdc1c9586.png
-[softmax_3]: https://cloud.githubusercontent.com/assets/10526591/23463176/ffa744cc-fed3-11e6-84bc-892fca770dc7.png
-[softmax_12]: https://cloud.githubusercontent.com/assets/10526591/23463178/ffc44806-fed3-11e6-9b0c-2c16b2e968e7.png
+[softmax_13]: https://cloud.githubusercontent.com/assets/10526591/23463515/29689ae4-fed5-11e6-9823-8a38db707a29.png
+[softmax_25]: https://cloud.githubusercontent.com/assets/10526591/23463516/296ca1c0-fed5-11e6-86ea-f4f8ae1be7ff.png
+[softmax_36]: https://cloud.githubusercontent.com/assets/10526591/23463518/296e72ac-fed5-11e6-9717-5e622bb7dcb4.png
+[softmax_1]: https://cloud.githubusercontent.com/assets/10526591/23463520/29753056-fed5-11e6-97bf-e53acc66e0ae.png
+[softmax_3]: https://cloud.githubusercontent.com/assets/10526591/23463517/296e0312-fed5-11e6-9815-888e0b569343.png
+[softmax_12]: https://cloud.githubusercontent.com/assets/10526591/23463519/29712d30-fed5-11e6-8d3c-c0fb34096613.png
 [wild]: https://cloud.githubusercontent.com/assets/10526591/23448814/8b391ed6-fe96-11e6-976b-331fe1e0b368.png
 
 
