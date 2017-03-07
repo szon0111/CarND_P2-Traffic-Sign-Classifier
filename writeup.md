@@ -106,7 +106,7 @@ My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
+| Input         		| 32x32x1 grayscale image   							| 
 | Convolution 3x3     	| 1x1 stride, valid padding, outputs 28x28x6 	|
 | Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
 | RELU					|												|
@@ -141,7 +141,8 @@ My final model results were:
 * Validation set accuracy: 97.5%
 * Test set accuracy: 95.4%
 
-I started out by implementing the original Lenet-5 architecture with grayscale conversion, normalization, and shuffling of the dataset, which resulted in around 91.7% validation accuracry. Ajusting some of the hyperparameters brought that up to 93.3% but the model showed overfitting soon as the validation accuracy was significantly lower than training accuracy. This issue could not be solved simply by adjusting the hyperparameters. 
+I started out by implementing the original Lenet-5 architecture. The Lenet-5 architecture works well with classification in images because it starts with simpler features and moves on to classify more complex features as the input goes through the layers. Also, concepts such as parameter sharinga and pooling reduce the size of data and computation, thus allowing faster training with relatively good results. More efficient networks such as Alexnet, GoogLenet, Densenet, etc have been introduced in recent years but I wanted to try improving on the original Lenet-5 architecture myself.
+I started with grayscale conversion, normalization, and shuffling of the dataset, which resulted in around 91.7% validation accuracry. Ajusting some of the hyperparameters brought that up to 93.3% but the model showed overfitting soon as the validation accuracy was significantly lower than training accuracy. This issue could not be solved simply by adjusting the hyperparameters. 
 Adding dropout immediately improved the validation accuracy to 94.6% and the random disconnections of networks helped reduce overfitting.
 Adding some augmented data produced from random rotations did improve the accuracy but not by much. This is where the model showed its limitation as adjusting hyperparemets nor adding even more augmented data could improve the validation accuracy.
 Deepening the model seemed to be the reasonable move and indeed, the addition of one convolution layer and one full connected layer improved the accuracy drastically. After some fine-tuning, the model achieved 97.5% accuracy even without any augmented data.
