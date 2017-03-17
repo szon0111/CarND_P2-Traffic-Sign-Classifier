@@ -44,9 +44,9 @@ The goals / steps of this project are the following:
 ---
 *Here is my [project code](https://github.com/szon0111/CarND_P2-Traffic-Sign-Classifier/blob/master/Traffic_Sign_Classifier.ipynb) in jupyter notebook*
 
-###Data Set Summary & Exploration
+### Data Set Summary & Exploration
 
-####1. Provide a basic summary of the data set and identify where in your code the summary was done. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+#### 1. Provide a basic summary of the data set and identify where in your code the summary was done. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 The code for this step is contained in the second code cell of the Jupyter notebook.  
 
@@ -59,7 +59,7 @@ signs data set:
 * The shape of a traffic sign image: 32x32x3 
 * The number of unique classes/labels in the data set: 43
 
-####2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
+#### 2. Include an exploratory visualization of the dataset and identify where the code is in your code file.
 
 The code for this step is contained in cell 6 of the Jupyter notebook.  
 
@@ -68,9 +68,9 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 We can see that the distribution is uneven with many classes that are underrepresented.
 
-###Design and Test a Model Architecture
+### Design and Test a Model Architecture
 
-####1. Describe how, and identify where in your code, you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
+#### 1. Describe how, and identify where in your code, you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc.
 
 The code for this step is contained in cells 12 through 15 of the jupyter notebook.
 
@@ -83,7 +83,7 @@ Here is an example of a traffic sign image before and after grayscaling.
 
 As a last step, I normalized the image data in order to prevent my gradient from going out control in such wide pixel range. This will help avoid my model getting stuck in local minima when I use a single, global learning rate.
 
-####2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
+#### 2. Describe how, and identify where in your code, you set up training, validation and testing data. How much data was in each set? Explain what techniques were used to split the data into these sets. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, identify where in your code, and provide example images of the additional data)
 
 The images were loaded from pickled data divided into training, validation, and testing data. The number of images were 34799, 4410, and 12630, respectively. 
 
@@ -98,7 +98,7 @@ As a result, 16891 images were added, increasing the training data size to 51690
 HOWEVER, I ended up not using the augmented data set as the increase in validation and test accuracy was less than a percent, which is not worth all the computation, time, and additional data.
 I plan on revisiting my model later on to try other data augmentation methods such as adding random noise and adjusting brightness, etc.
 
-####3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### 3. Describe, and identify where in your code, what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 The code for my final model is located in the seventh cell of the Jupyter notebook. 
 
@@ -129,12 +129,12 @@ My final model consisted of the following layers:
  
 
 
-####4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+#### 4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 For the model, I used the adam optimizer with a batch size of 256, 80 epochs, learning rate of 0.0005, and keep probability of 0.5
 I played with various hyperparemeters and analyzed the results by plotting the loss and accuracy results. I fine tuned my parameters to come up with the final values that would not overfit or underfit the data.
 
-####5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+#### 5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
 * Training set accuracy: 99.9% 
@@ -149,9 +149,9 @@ Deepening the model seemed to be the reasonable move and indeed, the addition of
 
  
 
-###Test a Model on New Images
+### Test a Model on New Images
 
-####1. Choose at least five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+#### 1. Choose at least five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are six German traffic signs that I found on the web:
 
@@ -160,7 +160,7 @@ Here are six German traffic signs that I found on the web:
 
 I expect the model to have a hard time classifying the fourth sign, which is for "road work", due to the presence of other signs on the edges.
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set.
+#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set.
 
 The code for making predictions on my final model is located in the tenth cell of the Jupyter notebook.
 
@@ -177,7 +177,7 @@ Here are the results of the prediction:
 
 The model was able to correctly guess all 6 traffic signs, which gives an accuracy of 100%, including the fourth sign that I was worried about. This compares favorably to the accuracy on the original test set.
 
-####3. Describe how certain the model is when predicting on each of the six new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
+#### 3. Describe how certain the model is when predicting on each of the six new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
 
 ![softmax_13][softmax_13]
 ![softmax_1][softmax_1]
@@ -190,39 +190,39 @@ As seen from the results above, the model had no problem identifying all six ima
 
 Log
 ---
-###2017/2/23:
+### 2017/2/23:
  - Validation Accuracy: **91.7%**
  - Model: LeNet-5
  - Parameters: Epochs = 100, Batch size = 128, learn rate = 0.0005, mu = 0, sigma = 0.1 
  - Pre-processing: shuffling, grayscale conversion, normalization
 
-###2017/2/24:
+### 2017/2/24:
  - Validation Accuracy: **93.3%**
  - Model: LeNet-5
  - Parameters: Epochs = 100, Batch size = 128, learn rate = 0.0007, mu = 0, sigma = 0.1 
  - Pre-processing: shuffling, grayscale conversion, normalization
 
-###2017/2/26:
+### 2017/2/26:
  - Validation Accuracy: **94.8%**
  - Model: LeNet-5
  - Parameters: Epochs = 100, Batch size = 256, learn rate = 0.0005, mu = 0, sigma = 0.1, dropout = 0.75
  - Pre-processing: shuffling, grayscale conversion, normalization
 
-###2017/2/26:
+### 2017/2/26:
  - Validation Accuracy: **95.6%**
  - Model: LeNet-5
  - Parameters: Epochs = 100, Batch size = 256, learn rate = 0.0005, mu = 0, sigma = 0.1, dropout = 0.75
  - Pre-processing: shuffling, grayscale conversion, normalization
  - Data-augmentation: 4440 new images with random rotations (-20, 20) for classes less than 500 images
 
-###2017/2/27:
+### 2017/2/27:
 - Validation Accuracy: **97.5%**
 - Model: Modified LeNet-5 with 3 Convolution layers(3x3) + 3 Fully connected layers
 - Parameters: Epochs = 80, Batch size = 256, learn rate = 0.0005, mu = 0, sigma = 0.1, dropout = 0.5
 - Pre-processing: shuffling, grayscale conversion, normalization
 - Data-augmentation: NONE
 
-###2017/2/27:
+### 2017/2/27:
 - **Test Accuracy: 95.4%**
 - Model: Modified LeNet-5 with 3 Convolution layers(3x3) + 3 Fully connected layers
 - Parameters: Epochs = 80, Batch size = 256, learn rate = 0.0005, mu = 0, sigma = 0.1, dropout = 0.5
