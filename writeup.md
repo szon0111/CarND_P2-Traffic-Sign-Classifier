@@ -1,4 +1,4 @@
-#**Traffic Sign Classifier - Report** 
+# **Traffic Sign Classifier - Report** 
 
 
 **Build a Traffic Sign Recognition Project**
